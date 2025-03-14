@@ -1,0 +1,17 @@
+// Responsive tasarım noktasında scss içinde ki mixin yapıları çokça kullanılır. Bu özellik belirli ekran boyutlarını isimlendirip bu ekran boyutlarında ilgili elemanın nasıl bir stile sahip olması gerektiğini belirleme yeteneği sunar.
+
+// Mixin yapıları tanımlanırken @mixin yazılıp bu yapıya bir isim verilir sonrasında {} içerisinde medya sorgusu yazılarak (ör: max-width ==> 1000px) bu ekran boyutu ilgili mixin yapısına eşlenir. Son olarak eleman içerisinde yazılacak css kodlarını karşılaması için @content yazılır. Bu sayede ilgili ekran boyutu mixinle kontrol edilebilir.
+
+// Kullanırken @inxlude yazılıp mixin e verilen isimden sonra {} açılıp gerekli css kodlaması yapılır.
+
+@mixin laptop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 850px) {
+    @content;
+  }
+}
