@@ -16,4 +16,4 @@ The JBL Sass project replicates the visual style and layout of the official JBL 
 - Sass: For efficient and modular CSS.
   
 📹  Preview
-![](
+![](jbl-clone-gif.gif)
